@@ -18,10 +18,10 @@ I try different installation method, the following step can make YOLO work under
 •	python flow --model cfg/yolo.cfg --load bin/yolov2.weights --demo videofile.mp4 --saveVideo --gpu 0.7 
 
 Run your own script:
-open cmd window
-cd to the YOLO folder
-activate darkflow-env
-python videoFile.py
+•open cmd window
+•cd to the YOLO folder
+•activate darkflow-env
+•python videoFile.py
 
 My conputer cfg:
 Core i5 7th + GTX 1050ti + 8Gb RAM
