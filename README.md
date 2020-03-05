@@ -10,6 +10,10 @@ I try different installation method, the following step can make YOLO work under
 
 •	clone https://github.com/thtrieu/darkflow, download necessary .cfg and weights from https://pjreddie.com/darknet/yolo/
 
+• press 'windows key' and search 'Anaconda Prompt'	to use the Anaconda Prompt
+
+while in the Anaconda Prompt:
+
 •	conda create -n darkflow-env python=3.6
 
 •	activate darkflow-env
