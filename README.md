@@ -29,7 +29,7 @@ while in the Anaconda Prompt:
 •	conda install tensorflow-gpu (some times the pip install tensorflow-gpu doesnt install the CUDA properly, so use the conda again )
 •	cd to the path of the YOLO folder (still using the Anaconda Prompt)
 
-•	python setup.py build_ext –inplace
+•	python3 setup.py build_ext –inplace
 
 •	python flow --model cfg/yolo.cfg --load bin/yolov2.weights --demo videofile.mp4 --saveVideo --gpu 0.7 
 
