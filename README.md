@@ -22,7 +22,7 @@ $ pip install filterpy
 
 $ cd C:\Users\QWER\AppData\Local\Programs\Python\Python36\YOLO\Counter\python-traffic-counter-with-yolo-and-sort-master
 
-$ python main.py --input input/1.0.mp4 --output output/highway.avi --yolo yolo-coco
+$ python main.py --input input/1.0.mp4 --output output/highway.avi --yolo yolo-coco 
 
 
 
