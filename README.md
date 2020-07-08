@@ -1,52 +1,26 @@
-#  YOLO installation instruction
 
-I try different installation method, the following step can make YOLO work under Win10
+Install Python 3.7
+Install Conda
+update graphic card driver using NVIDIA experience
+**using the Anaconda Prompt in administrator mode
+**while in the Anaconda Prompt
 
-•	Install Python 3.6.6
+$ conda create --name tf_gpu tensorflow-gpu 
+$ conda install -c menpo opencv
+$ conda create -n tf tensorflow
 
-•	Install Conda
+**then install all the missing package you need, for that time:
 
-•	Install the graphic card driver: using NVIDIA experience(dont search your driver derictly on google, NVIDIA experience can automaticlly detect your card model and install the right one for you)
+$ https://pjreddie.com/darknet/install/
+$ conda install -c conda-forge imutils 
+$ pip install -U scikit-learn scipy matplotlib
+$ pip install scikit-learn==0.22.2
+$ pip install filterpy
 
-•	clone https://github.com/thtrieu/darkflow, download necessary .cfg and weights from https://pjreddie.com/darknet/yolo/
 
-• press 'windows key' and search 'Anaconda Prompt'	to use the Anaconda Prompt
+after we install these, try
 
-while in the Anaconda Prompt:
+$ cd C:\Users\QWER\AppData\Local\Programs\Python\Python36\YOLO\Counter\python-traffic-counter-with-yolo-and-sort-master
 
-•	conda create -n darkflow-env python=3.6
+$ python main.py --input input/1.0.mp4 --output output/highway.avi --yolo yolo-coco
 
-•	activate darkflow-env
-
-•	pip install tensorflow-gpu
-
-•	conda install cython numpy
-
-•	conda config --add channels conda-forge
-
-•	conda install opencv
-
-•	conda install tensorflow-gpu (some times the pip install tensorflow-gpu doesnt install the CUDA properly, so use the conda again )
-•	cd to the path of the YOLO folder (still using the Anaconda Prompt)
-
-•	python3 setup.py build_ext –inplace
-
-•	python flow --model cfg/yolo.cfg --load bin/yolov2.weights --demo videofile.mp4 --saveVideo --gpu 0.7 
-
-# Run your own script:
-
-•open cmd window
-
-•cd to the YOLO folder
-
-•activate darkflow-env
-
-•python videoFile.py
-
-# My conputer cfg:
-
-Core i5 7th + GTX 1050ti + 8Gb RAM
-
-the FPS is about 25
-
-see the example on youtube:https://youtu.be/PpI4r2vID8I
